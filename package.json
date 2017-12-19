@@ -14,6 +14,7 @@
     "test": "test"
   },
   "scripts": {
+    "install": "yarn build",
     "build": "tsc -p src/tsconfig.json",
     "build:umd": "rollup -c",
     "test": "rollup -c test/rollup.config.js && ava test/decorator.spec.js"
